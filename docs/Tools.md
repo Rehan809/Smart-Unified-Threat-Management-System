@@ -23,8 +23,6 @@ Ubuntu Linux provides the base operating environment for SUTMS. It provides:
 
 - Linux networking capabilities
 - System and service management
-- Package management
-- Firewall integration
 - Process and resource management
 
 ## 2. Suricata
@@ -34,13 +32,8 @@ Suricata is the primary network IDS/IPS component. Suricata generates security e
 ### Main Functions
 
 - Packet inspection
-- Protocol analysis
 - Signature-based detection
-- Intrusion detection
-- Intrusion prevention
 - Security-event generation
-- Network security monitoring
-
 
 ## 3. Wazuh
 
@@ -49,10 +42,7 @@ Wazuh provides centralized security monitoring and event analysis. Wazuh provide
 ### Main Functions
 
 - Log collection
-- Security-event analysis
-- Alert generation
 - Event correlation
-- Security monitoring
 - Active response
 - Dashboard visualization
 
@@ -64,10 +54,7 @@ iptables provides the firewall and network enforcement layer.
 ### Main Functions
 
 - Packet filtering
-- Network access control
-- Traffic restriction
 - IP-based blocking
-- Firewall rule management
 - Security-event enforcement
 
 ## 5. Glances
@@ -78,9 +65,6 @@ Glances is used for monitoring system resources. It helps evaluate the resource 
 
 - CPU utilization
 - Memory utilization
-- Disk usage
-- Network activity
-- Running processes
 - System load
 
 
@@ -94,10 +78,6 @@ Python and Linux shell utilities are used for supporting:
 
 - Automation
 - System administration
-- Data processing
-- Testing
-- Configuration management
-- Project utilities
 
 ## 8. Virtualization
 
@@ -106,7 +86,5 @@ The project uses a virtualized Linux environment for controlled development and 
 Virtualization provides:
 
 - Network isolation
-- Repeatable testing
-- Controlled traffic generation
 - Resource allocation
 - Safe security-event simulation
