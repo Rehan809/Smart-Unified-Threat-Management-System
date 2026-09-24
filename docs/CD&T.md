@@ -6,8 +6,6 @@ This document describes the main implementation stages of SUTMS: configuring the
 
 The implementation focused on integrating **Suricata IDS/IPS, Wazuh SIEM, iptables, Glances, and STIX/TAXII threat intelligence** into a unified home-network security system.
 
----
-
 # 1. Configuration
 
 Each SUTMS component was configured according to its role in the security architecture.
@@ -36,8 +34,6 @@ The issue was that operating several security software components at the same ti
 
 **Fix:** The Suricata detection stack was optimized to reduce unnecessary resource consumption while maintaining detection capability.
 
----
-
 # 2. Deployment
 
 SUTMS was deployed in an **Ubuntu 24.04 virtualized environment** for controlled home-network security monitoring.
@@ -52,8 +48,6 @@ The deployment combined:
 - Python and shell utilities for supporting automation
 
 The system supported monitoring of both **inbound and outbound network traffic**.
-
----
 
 # 3. Testing
 
@@ -84,8 +78,6 @@ The evaluation demonstrated:
 - Automated malicious-IP blocking after **5 failed SSH attempts within 60 seconds**.
 - Approximately **55% reduction in memory utilization** after optimizing the Suricata detection stack.
 - **Below 30% CPU usage** during continuous monitoring and live attack simulations.
-
----
 
 # Overall Implementation Flow
 
