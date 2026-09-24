@@ -35,9 +35,3 @@ The overall **SUTMS** workflow can be represented as:
 <img width="759" height="80" alt="Screenshot" src="https://github.com/user-attachments/assets/0bdde540-86ef-41ba-b329-9d1f9abb7c6a" />
 
 The architecture separates the major security functions into distinct logical layers. This separation improves modularity and allows individual components to be configured, monitored, tested, and maintained independently.
-
-## 4. Summary
-
-**SUTMS** combines network intrusion detection, centralized security monitoring, firewall enforcement, threat-intelligence support, and system-resource monitoring within a unified security architecture. The architecture is designed to provide multiple layers of network protection while maintaining modularity and operational visibility.
-
-The public documentation intentionally presents the system at an architectural level. Research-specific mechanisms, internal detection logic, custom response procedures, optimization techniques, thresholds, and unpublished implementation details remain outside the public repository.
