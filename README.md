@@ -32,12 +32,12 @@ SUTMS is an implemented and tested security-monitoring project developed for hom
 
 ## Architecture
 
-The system supports both **inbound and outbound network traffic** monitoring.
+The system supports monitoring of both **inbound and outbound network traffic**.
 
 **Core flow:**
 
-Picture>>\
-Internet ↔ Home Router ↔ Home Network ↔ SUTMS
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/991a9d2a-ef10-49d9-99a7-53823639ec06" />
+
 
 ## Project Details
 
@@ -54,8 +54,6 @@ SUTMS was developed collaboratively by:
 
 ## Acknowledgement
 
-We would like to express our sincere gratitude to **RAMESH D [[LinkedIn](https://www.linkedin.com/in/rameshd24/)]** for his constant guidance and valuable suggestions during the project work on SUTMS.
+We want to express our sincere gratitude to **RAMESH D [[LinkedIn](https://www.linkedin.com/in/rameshd24/)]** for his constant guidance and valuable suggestions during the project work on SUTMS.
 
-His technical insights, patience, and support helped us understand the challenges, improve our implementation, and successfully complete this project. We are truly thankful for his mentorship and contribution to our learning and project journey.
-
-```
+His technical insights, patience, and support helped us understand the challenges, improve our implementation, and complete this project. We are truly thankful for his mentorship and contribution to our learning and project journey.
