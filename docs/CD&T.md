@@ -20,34 +20,9 @@ The components were configured separately and then connected according to their 
 
 Configuration files were kept separate from application code so that security rules, service settings, and environment-specific parameters could be managed independently.
 
-## Challenges and Fixes
-
-### Configuration Compatibility
-
-The problem was that different security components had to function together in a single Ubuntu system.
-
-**Fix:** Configuration settings were reviewed and validated individually before integrating the components.
-
-### Resource Usage
-
-The issue was that operating several security software components at the same time resulted in extra CPU and memory usage.
-
-**Fix:** The Suricata detection stack was optimized to reduce unnecessary resource consumption while maintaining detection capability.
-
 # 2. Deployment
 
-SUTMS was deployed in an **Ubuntu 24.04 virtualized environment** for controlled home-network security monitoring.
-
-The deployment combined:
-
-- Suricata for network inspection
-- Wazuh for centralized security monitoring
-- iptables for firewall enforcement
-- Glances for system-resource monitoring
-- STIX/TAXII for threat intelligence
-- Python and shell utilities for supporting automation
-
-The system supported monitoring of both **inbound and outbound network traffic**.
+SUTMS was deployed in an **Ubuntu 24.04 virtualized environment** for controlled home-network security monitoring. The system supported monitoring of both **inbound and outbound network traffic**.
 
 # 3. Testing
 
@@ -56,19 +31,11 @@ The complete SUTMS environment was tested in a controlled virtual environment us
 Testing focused on:
 
 - Network traffic inspection
-- Attack detection
-- Security-event generation
-- Wazuh alert monitoring
-- SSH brute-force detection
 - Automated IP blocking
 - Suricata–Wazuh–iptables integration
 - CPU and memory utilization
 
 The system was initially tested under normal network traffic conditions. It was then subjected to a series of attack scenarios to evaluate its performance.
-
-The detection events triggered by Suricata were supervised by Wazuh, while the firewall was monitored to observe the response via iptables.
-
-The system’s performance was constantly reviewed and adjusted to guarantee the best possible outcome in active monitoring.
 
 ## Key Results
 
