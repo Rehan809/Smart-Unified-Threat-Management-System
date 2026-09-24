@@ -6,8 +6,6 @@
 
 The architecture combines multiple open-source security technologies within a Linux-based environment. Each component performs a dedicated security function while contributing to a coordinated security monitoring and response workflow.
 
----
-
 ## 2. High-Level Architecture
 
 ```
@@ -49,8 +47,6 @@ The architecture combines multiple open-source security technologies within a Li
     └───────────────────┘
 ````
 
----
-
 ## 3. Architectural Components
 
 ### 3.1 Network Interface
@@ -68,8 +64,6 @@ The network layer may provide information such as:
 
 The exact interface configuration depends on the deployment environment.
 
----
-
 ### 3.2 Suricata IDS/IPS
 
 Suricata is used as the network intrusion detection and prevention component of **SUTMS**. Its primary responsibilities include:
@@ -85,8 +79,6 @@ Suricata is used as the network intrusion detection and prevention component of 
 
 Suricata generates security events that can be consumed by the centralized monitoring layer.
 
----
-
 ### 3.3 Wazuh Security Monitoring Layer
 
 Wazuh provides centralized security monitoring and event analysis within **SUTMS**. It can collect information from multiple security and system sources, including:
@@ -98,8 +90,6 @@ Wazuh provides centralized security monitoring and event analysis within **SUTMS
 - Network-related events
 
 The Wazuh layer provides centralized visibility into security activity and supports event analysis and response workflows.
-
----
 
 ### 3.4 iptables Firewall Layer
 
@@ -113,8 +103,6 @@ iptables provides the network enforcement layer within the **SUTMS** architectur
 - Enforcement of security responses
 
 iptables operates at the Linux networking layer and provides the mechanism through which network traffic can be allowed, restricted, or blocked.
-
----
 
 ### 3.5 Glances System Monitoring
 
@@ -130,8 +118,6 @@ Glances provides system-resource monitoring for the **SUTMS** environment. It ca
 
 System monitoring helps evaluate the operational requirements and resource overhead of the security stack.
 
----
-
 ## 4. High-Level Data Flow
 
 The overall **SUTMS** workflow can be represented as:
@@ -140,8 +126,6 @@ The overall **SUTMS** workflow can be represented as:
 
 
 The architecture separates the major security functions into distinct logical layers. This separation improves modularity and allows individual components to be configured, monitored, tested, and maintained independently.
-
----
 
 ## 5. Security Processing Flow
 
@@ -179,8 +163,6 @@ The firewall layer can enforce the resulting network-security action.
 
 Security events and system-resource information remain available for monitoring and analysis.
 
----
-
 ## 6. Component Responsibilities
 
 | Component                   | Primary Responsibility                             |
@@ -192,8 +174,6 @@ Security events and system-resource information remain available for monitoring 
 | Glances                     | System-resource monitoring                         |
 | Ubuntu Linux                | Base operating system and networking environment   |
 | Threat Intelligence Sources | External security intelligence where configured    |
-
----
 
 ## 7. Logging and Visibility
 
@@ -229,8 +209,6 @@ The Linux environment can provide:
 - Service activity
 - Network-related information
 
----
-
 ## 8. Threat Intelligence Layer
 
 **SUTMS** can incorporate external threat-intelligence information as part of its security architecture.
@@ -242,8 +220,6 @@ Relevant technologies and standards include:
 - Threat-intelligence feeds
 
 Threat intelligence can provide information about known security indicators and malicious infrastructure.
-
----
 
 ## 9. Deployment Environment
 
@@ -260,8 +236,6 @@ The virtualized environment provides:
 - System-resource monitoring
 
 The architecture can be adapted to other Linux-based environments or dedicated hardware depending on deployment requirements.
-
----
 
 ## 10. Design Principles
 
@@ -289,12 +263,9 @@ The architecture supports automated security responses when appropriate conditio
 
 The modular architecture allows additional security tools, monitoring capabilities, intelligence sources, and enforcement mechanisms to be incorporated in future versions.
 
----
 
-## 13. Summary
+## 11. Summary
 
 **SUTMS** combines network intrusion detection, centralized security monitoring, firewall enforcement, threat-intelligence support, and system-resource monitoring within a unified security architecture. The architecture is designed to provide multiple layers of network protection while maintaining modularity and operational visibility.
 
 The public documentation intentionally presents the system at an architectural level. Research-specific mechanisms, internal detection logic, custom response procedures, optimization techniques, thresholds, and unpublished implementation details remain outside the public repository.
-
-``` ```
